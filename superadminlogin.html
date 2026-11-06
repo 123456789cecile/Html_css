@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - HBMS</title>
+
+    <link rel="stylesheet" href="userdashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fas fa-hospital"></i>
+            <h2>HBMS</h2>
+        </div>
+
+        <div class="user-info">
+            <i class="fas fa-user-circle"></i>
+            <h3>Welcome Patient</h3>
+            <p>User Dashboard</p>
+        </div>
+
+        <nav class="sidebar-menu">
+            <a href="#dashboard" class="active"><i class="fas fa-home"></i> Dashboard</a>
+            <a href="#book"><i class="fas fa-calendar-plus"></i> Book Appointment</a>
+            <a href="#appointments"><i class="fas fa-calendar-check"></i> My Appointments</a>
+            <a href="#departments"><i class="fas fa-stethoscope"></i> Departments</a>
+            <a href="#locations"><i class="fas fa-map-marker-alt"></i> Hospital Locations</a>
+            <a href="#profile"><i class="fas fa-user"></i> My Profile</a>
+            <a href="UserLogin.html" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </nav>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <h1>User Dashboard</h1>
+                <p>Manage your healthcare activities</p>
+            </div>
+
+            <div class="topbar-user">
+                <i class="fas fa-user-circle"></i>
+                <span>Patient</span>
+            </div>
+        </header>
+
+        <!-- DASHBOARD -->
+        <section id="dashboard" class="welcome-section">
+            <h2>Welcome to HBMS Healthcare System</h2>
+            <p>Manage your appointments, view hospital departments and find hospital locations easily.</p>
+        </section>
+
+        <!-- STATISTICS -->
+        <section class="stats-container">
+
+            <div class="stat-card">
+                <i class="fas fa-calendar-check"></i>
+                <div>
+                    <h3>05</h3>
+                    <p>My Appointments</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <i class="fas fa-clock"></i>
+                <div>
+                    <h3>02</h3>
+                    <p>Pending Appointments</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <h3>03</h3>
+                    <p>Approved Appointments</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- QUICK ACTIONS -->
+        <section class="content-section">
+
+            <h2>Quick Actions</h2>
+
+            <div class="quick-actions">
+
+                <a href="#book" class="action-card">
+                    <i class="fas fa-calendar-plus"></i>
+                    <h3>Book Appointment</h3>
+                    <p>Request a new medical appointment.</p>
+                </a>
+
+                <a href="#appointments" class="action-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>View Appointments</h3>
+                    <p>Check your appointment information.</p>
+                </a>
+
+                <a href="#locations" class="action-card">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Hospital Locations</h3>
+                    <p>Find hospital location information.</p>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- BOOK APPOINTMENT -->
+        <section id="book" class="content-section">
+
+            <h2>Book an Appointment</h2>
+
+            <form class="appointment-form" action="#" method="post">
+
+                <!-- NATIONAL ID -->
+                <div class="form-group">
+                    <label for="nationalId">National ID Number</label>
+
+                    <input
+                        type="text"
+                        id="nationalId"
+                        name="nationalId"
+                        placeholder="Enter your National ID number"
+                        inputmode="numeric"
+                        autocomplete="off"
+                        required
+                        aria-describedby="id-help">
+
+                    <small id="id-help" class="field-help">
+                        Enter your own ID number. Bring your original ID card to the hospital for identity verification.
+                    </small>
+                </div>
+
+                <!-- DEPARTMENT -->
+                <div class="form-group">
+                    <label for="department">Select Department</label>
+
+                    <select id="department" name="department" required>
+                        <option value="">Choose Department</option>
+                        <option>General Medicine</option>
+                        <option>Pediatrics</option>
+                        <option>Dental Care</option>
+                        <option>Cardiology</option>
+                        <option>Maternity</option>
+                        <option>Ophthalmology</option>
+                    </select>
+                </div>
+
+                <!-- DATE -->
+                <div class="form-group">
+                    <label for="date">Appointment Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <!-- TIME -->
+                <div class="form-group">
+                    <label for="time">Appointment Time</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+
+                <!-- REASON -->
+                <div class="form-group full-width">
+                    <label for="reason">Reason for Appointment</label>
+
+                    <textarea
+                        id="reason"
+                        name="reason"
+                        placeholder="Enter your reason..."
+                        required></textarea>
+                </div>
+
+                <!-- PRIVACY NOTICE -->
+                <div class="privacy-notice full-width">
+                    <i class="fas fa-shield-alt"></i>
+
+                    Your National ID is sensitive personal information.
+                    It should only be used by authorized hospital staff
+                    to verify your identity.
+                </div>
+
+                <button type="submit" class="primary-button">
+                    <i class="fas fa-paper-plane"></i>
+                    Submit Appointment
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- MY APPOINTMENTS -->
+        <section id="appointments" class="content-section">
+
+            <h2>My Appointments</h2>
+
+            <div class="table-container">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Department</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>General Medicine</td>
+                            <td>10/11/2026</td>
+                            <td>09:00 AM</td>
+                            <td><span class="approved">Approved</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Dental Care</td>
+                            <td>15/11/2026</td>
+                            <td>10:00 AM</td>
+                            <td><span class="pending">Pending</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </section>
+
+        <!-- DEPARTMENTS -->
+        <section id="departments" class="content-section">
+
+            <h2>Medical Departments</h2>
+
+            <div class="department-grid">
+
+                <div class="department-card">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Cardiology</h3>
+                    <p>Heart healthcare services.</p>
+                </div>
+
+                <div class="department-card">
+                    <i class="fas fa-child"></i>
+                    <h3>Pediatrics</h3>
+                    <p>Healthcare services for children.</p>
+                </div>
+
+                <div class="department-card">
+                    <i class="fas fa-tooth"></i>
+                    <h3>Dental Care</h3>
+                    <p>Teeth and oral healthcare.</p>
+                </div>
+
+                <div class="department-card">
+                    <i class="fas fa-baby"></i>
+                    <h3>Maternity</h3>
+                    <p>Maternal healthcare services.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- HOSPITAL LOCATIONS -->
+        <section id="locations" class="content-section">
+
+            <h2>Hospital Locations</h2>
+
+            <div class="location-card">
+
+                <div>
+                    <i class="fas fa-hospital"></i>
+                    <h3>Find Our Hospital</h3>
+                    <p>Click the button below to view the hospital location map.</p>
+                </div>
+
+                <a href="map.png" target="_blank" rel="noopener" class="map-button">
+                    <i class="fas fa-map-marker-alt"></i>
+                    View Hospital Map
+                </a>
+
+            </div>
+        </section>
+
+        <!-- PROFILE -->
+        <section id="profile" class="content-section">
+
+            <h2>My Profile</h2>
+
+            <div class="profile-card">
+
+                <i class="fas fa-user-circle profile-icon"></i>
+
+                <div>
+                    <h3>Patient Information</h3>
+                    <p>Name: Patient Name</p>
+                    <p>Email: patient@example.com</p>
+                    <p>Phone: 07XXXXXXXX</p>
+                    <p>Patient ID: HBMS-2026-001</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2026 HBMS - Hospital Booking and Management System. All Rights Reserved.</p>
+        </footer>
+
+    </main>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,350 @@
+
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f5faff;
+    color: #123c52;
+}
+
+/* MAIN HEADER */
+.header {
+    width: 100%;
+    min-height: 80px;
+    background: #123c52;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo i {
+    color: #42d6e8;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #42d6e8;
+}
+
+.navbar .register {
+    background: #078bb5;
+    padding: 11px 15px;
+    border-radius: 5px;
+}
+
+.navbar .register:hover {
+    background: #42d6e8;
+    color: #123c52;
+}
+
+/* CHANGE COLOR BUTTON */
+.change-color {
+    background: #42d6e8;
+    color: #123c52;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* LANGUAGE SELECTOR */
+.language-box {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: white;
+}
+
+.language-box select {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+/* DOCTOR LOGIN PAGE */
+.doctor-login-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background:
+        linear-gradient(rgba(245, 250, 255, 0.94),
+        rgba(245, 250, 255, 0.96)),
+        linear-gradient(135deg, #d8f4fa, #eaf2ff);
+}
+
+/* DOCTOR LOGIN HEADER */
+.doctor-login-header {
+    width: 100%;
+    padding: 22px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.doctor-login-logo {
+    color: #123c52;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.doctor-login-logo i {
+    color: #078bb5;
+}
+
+.doctor-login-home {
+    color: #087da5;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.doctor-login-home:hover {
+    color: #123c52;
+}
+
+
+/* LOGIN MAIN SECTION */
+.doctor-login-main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 15px;
+}
+
+/* LOGIN CARD */
+.doctor-login-card {
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    padding: 40px 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(18, 60, 82, 0.12);
+    border-top: 5px solid #078bb5;
+    text-align: center;
+}
+
+/* LOGIN ICON */
+.doctor-login-icon {
+    width: 75px;
+    height: 75px;
+    background: #e2f8fc;
+    color: #078bb5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 18px;
+    font-size: 32px;
+}
+
+/* LOGIN TEXT */
+.doctor-login-eyebrow {
+    color: #078bb5;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.doctor-login-card h1 {
+    font-size: 30px;
+    color: #123c52;
+    margin-bottom: 12px;
+}
+
+.doctor-login-subtitle {
+    color: #71818b;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+/* FORM FIELDS */
+.doctor-login-field {
+    text-align: left;
+    margin-bottom: 22px;
+}
+
+.doctor-login-field label {
+    display: block;
+    color: #123c52;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 9px;
+}
+
+.doctor-login-field input {
+    width: 100%;
+    height: 48px;
+    padding: 12px 14px;
+    border: 1px solid #d5e2e9;
+    border-radius: 7px;
+    outline: none;
+    font-size: 14px;
+    background: #fbfdff;
+    transition: 0.3s;
+}
+
+.doctor-login-field input:focus {
+    border-color: #078bb5;
+    box-shadow: 0 0 0 3px rgba(7, 139, 181, 0.12);
+    background: white;
+}
+
+.doctor-login-field input::placeholder {
+    color: #a2afb7;
+}
+
+
+/* SIGN IN BUTTON */
+.doctor-login-submit {
+    width: 100%;
+    height: 50px;
+    background: #087da5;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: 0.3s;
+}
+
+.doctor-login-submit i {
+    margin-right: 8px;
+}
+
+.doctor-login-submit:hover {
+    background: #123c52;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(18, 60, 82, 0.2);
+}
+
+
+/* REGISTER INFORMATION */
+.doctor-login-register {
+    color: #71818b;
+    font-size: 13px;
+    margin-top: 25px;
+    line-height: 1.7;
+}
+
+.doctor-login-register span {
+    display: block;
+    color: #087da5;
+    font-weight: bold;
+}
+
+
+/* SECURITY INFORMATION */
+.doctor-login-note {
+    background: #effaff;
+    border-left: 4px solid #42d6e8;
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.doctor-login-note strong {
+    color: #123c52;
+    font-size: 13px;
+}
+
+.doctor-login-note strong i {
+    color: #078bb5;
+    margin-right: 5px;
+}
+
+.doctor-login-note p {
+    color: #71818b;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-top: 8px;
+}
+
+
+/* FOOTER */
+.doctor-login-footer {
+    background: #123c52;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 13px;
+}
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+    .header {
+        justify-content: center;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .doctor-login-header {
+        padding: 20px;
+    }
+
+    .doctor-login-card {
+        padding: 30px 20px;
+    }
+
+    .doctor-login-card h1 {
+        font-size: 25px;
+    }
+
+    .doctor-login-footer {
+        font-size: 11px;
+    }
+}

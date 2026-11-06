@@ -1,0 +1,535 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HBMS - Hospital Management and Booking System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header" id="home">
+
+    <a href="index.html" class="logo">
+        <i class="fa fa-hospital"></i> HBMS
+    </a>
+<button type="button" >change color</button>
+    <nav class="navbar">
+        <a href="#home"><i class="fa fa-home"></i> HOME</a>
+
+        <a href="about.html">
+            <i class="fa fa-info-circle"></i> ABOUT
+        </a>
+
+        <a href="AdminLogin.html">
+            <i class="fa fa-user-shield"></i> ADMIN LOGIN
+        </a>
+<a href="map.png">
+    GOOGLE MAP
+</a>
+        <a href="doctorlogin.html">
+            <i class="fa fa-user-doctor"></i> DOCTOR LOGIN
+        </a>
+<a href="superadminlogin.html">SUPER ADMIN LOGIN</a>
+        <a href="UserRegistration.html" class="register">
+            <i class="fa fa-user-plus"></i> USER REGISTRATION
+        </a>
+    </nav>
+
+    <!-- LANGUAGE SELECTOR -->
+    <div class="language-box">
+        <i class="fa fa-globe"></i>
+
+        <select name="language" id="language">
+            <option value="en">English</option>
+            <option value="rw">Kinyarwanda</option>
+            <option value="fr">Français</option>
+        </select>
+    </div>
+
+</header>
+
+<main>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+
+    <div class="hero-text">
+
+        <p class="welcome">
+            <i class="fa fa-heart"></i> WELCOME TO HBMS
+        </p>
+
+        <h1>
+            HOSPITAL
+            <span>MANAGEMENT AND BOOKING SYSTEM</span>
+        </h1>
+
+        <p class="description">
+            A smart and reliable hospital management platform
+            designed to connect patients, doctors and hospitals
+            in one easy-to-use system.
+        </p>
+
+        <div class="buttons">
+
+            <a href="UserRegistration.html" class="primary-btn">
+                <i class="fa fa-user-plus"></i> Register Now
+            </a>
+
+            <a href="#services" class="secondary-btn">
+                <i class="fa fa-arrow-down"></i> Explore Services
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="image-container">
+        <img src="pic2.png" alt="Hospital Management System">
+    </div>
+
+</section>
+
+
+<!-- SERVICES SECTION -->
+<section class="services section" id="services">
+
+    <div class="section-title">
+
+        <p>OUR SERVICES</p>
+
+        <h2>What Our System Provides</h2>
+
+        <span>
+            Simple and smart healthcare management for everyone.
+        </span>
+
+    </div>
+
+    <div class="service-container">
+
+        <!-- APPOINTMENT -->
+        <div class="service-card">
+
+            <div class="service-icon">
+                <i class="fa fa-calendar-check"></i>
+            </div>
+
+            <h3>Appointment Booking</h3>
+
+            <p>
+                Patients can book hospital appointments
+                easily without wasting time.
+            </p>
+
+        </div>
+
+        <!-- MEDICAL DEPARTMENTS -->
+        <div class="service-card">
+
+            <div class="service-icon">
+                <i class="fa fa-stethoscope"></i>
+            </div>
+
+            <h3>Medical Departments</h3>
+
+            <p>
+                Patients can explore available medical
+                departments and healthcare services.
+            </p>
+
+        </div>
+
+        <!-- HOSPITAL LOCATION -->
+        <div class="service-card location-card">
+
+            <div class="service-icon">
+                <i class="fa fa-location-dot"></i>
+            </div>
+
+            <h3>Hospital Location</h3>
+
+            <img src="map.png"
+                 alt="Hospital Location Map"
+                 class="map-image">
+
+            <p>
+                Find hospital locations and get directions
+                using our hospital map.
+            </p>
+
+        </div>
+
+        <!-- EMERGENCY -->
+        <div class="service-card">
+
+            <div class="service-icon">
+                <i class="fa fa-truck-medical"></i>
+            </div>
+
+            <h3>Emergency Support</h3>
+
+            <p>
+                Quickly find important hospital information
+                when emergency healthcare is needed.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- HOW IT WORKS -->
+<section class="how-it-works section">
+
+    <div class="section-title">
+
+        <p>HOW IT WORKS</p>
+
+        <h2>Easy Steps To Get Healthcare</h2>
+
+        <span>
+            Follow these simple steps to access our services.
+        </span>
+
+    </div>
+
+    <div class="steps">
+
+        <div class="step">
+
+            <div class="step-number">
+                <i class="fa fa-user-plus"></i> 01
+            </div>
+
+            <h3>Create Account</h3>
+
+            <p>
+                Register as a patient and create your account.
+            </p>
+
+        </div>
+
+        <div class="step">
+
+            <div class="step-number">
+                <i class="fa fa-stethoscope"></i> 02
+            </div>
+
+            <h3>Explore Services</h3>
+
+            <p>
+                View available medical departments and services.
+            </p>
+
+        </div>
+
+        <div class="step">
+
+            <div class="step-number">
+                <i class="fa fa-calendar-plus"></i> 03
+            </div>
+
+            <h3>Book Appointment</h3>
+
+            <p>
+                Choose your preferred date and time for consultation.
+            </p>
+
+        </div>
+
+        <div class="step">
+
+            <div class="step-number">
+                <i class="fa fa-hospital"></i> 04
+            </div>
+
+            <h3>Visit Hospital</h3>
+
+            <p>
+                Use the hospital location information to find your hospital.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FEATURES SECTION -->
+<section class="features section">
+
+    <div class="feature-image">
+
+        <img src="pic1.png" alt="Healthcare Services">
+
+    </div>
+
+    <div class="feature-text">
+
+        <p class="small-title">WHY CHOOSE HBMS?</p>
+
+        <h2>
+            Making Healthcare
+            <span>Simple & Accessible</span>
+        </h2>
+
+        <p>
+            Our Hospital Management System provides a simple
+            way for patients and hospitals to manage healthcare
+            services digitally.
+        </p>
+
+        <div class="feature-list">
+
+            <p>
+                <i class="fa fa-circle-check"></i>
+                Easy appointment booking
+            </p>
+
+            <p>
+                <i class="fa fa-circle-check"></i>
+                Medical department management
+            </p>
+
+            <p>
+                <i class="fa fa-circle-check"></i>
+                Hospital location and navigation
+            </p>
+
+            <p>
+                <i class="fa fa-circle-check"></i>
+                Secure patient registration
+            </p>
+
+            <p>
+                <i class="fa fa-circle-check"></i>
+                Simple hospital management
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- STATISTICS -->
+<section class="statistics">
+
+    <div class="stat">
+
+        <i class="fa fa-users"></i>
+
+        <h2>100+</h2>
+
+        <p>Patients</p>
+
+    </div>
+
+    <div class="stat">
+
+        <i class="fa fa-user-doctor"></i>
+
+        <h2>25+</h2>
+
+        <p>Doctors</p>
+
+    </div>
+
+    <div class="stat">
+
+        <i class="fa fa-hospital-user"></i>
+
+        <h2>10+</h2>
+
+        <p>Departments</p>
+
+    </div>
+
+    <div class="stat">
+
+        <i class="fa fa-clock"></i>
+
+        <h2>24/7</h2>
+
+        <p>Healthcare Support</p>
+
+    </div>
+
+</section>
+
+
+<!-- EMERGENCY SECTION -->
+<section class="emergency">
+
+    <div>
+
+        <p>NEED MEDICAL HELP?</p>
+
+        <h2>Find The Right Hospital For You</h2>
+
+        <span>
+            Register today and access healthcare services easily.
+        </span>
+
+    </div>
+
+    <a href="UserRegistration.html" class="emergency-btn">
+        Get Started
+        <i class="fa fa-arrow-right"></i>
+    </a>
+
+</section>
+
+
+<!-- ABOUT SECTION -->
+<section class="about section" id="about">
+
+    <div class="section-title">
+
+        <p>ABOUT HBMS</p>
+
+        <h2>About Hospital Management System</h2>
+
+    </div>
+
+    <div class="about-content">
+
+        <p>
+            Hospital Management System is a digital platform
+            designed to make healthcare services easier and
+            more accessible.
+        </p>
+
+        <p>
+            Patients can register, explore medical departments,
+            book appointments and locate hospitals using a map.
+        </p>
+
+        <p>
+            Hospital administrators can manage doctors,
+            patients and appointments through the system.
+        </p>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <!-- LOGO -->
+        <div class="footer-about">
+
+            <h2>
+                <i class="fa fa-hospital"></i> HBMS
+            </h2>
+
+            <p>
+                Smart healthcare management for patients,
+                doctors and hospitals.
+            </p>
+
+        </div>
+
+
+        <!-- QUICK LINKS -->
+        <div class="footer-links">
+
+            <h3>QUICK LINKS</h3>
+
+            <a href="#home">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="AdminLogin.html">Admin Login</a>
+
+            <a href="doctorlogin.html">Doctor Login</a>
+
+            <a href="UserRegistration.html">User Registration</a>
+            
+
+        </div>
+
+
+        <!-- CONTACT -->
+        <div class="footer-contact">
+
+            <h3>CONTACT US</h3>
+
+            <p>
+                <i class="fa fa-envelope"></i>
+                hms@gmail.com
+            </p>
+
+            <p>
+                <i class="fa fa-phone"></i>
+                0787776544
+            </p>
+
+            <p>
+                <i class="fab fa-facebook"></i>
+                Facebook: HMS
+            </p>
+
+            <p>
+                <i class="fab fa-x-twitter"></i>
+                X: HMS123
+            </p>
+
+        </div>
+
+
+        <!-- LOCATION -->
+        <div class="footer-location">
+
+            <h3>LOCATION</h3>
+
+            <p>
+                <i class="fa fa-location-dot"></i>
+                Rwanda
+            </p>
+
+            <p>
+                <i class="fa fa-hospital"></i>
+                Hospital Management System
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- COPYRIGHT -->
+    <div class="copyright">
+
+        <p>
+            © 2026 Hospital Management System.
+            All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

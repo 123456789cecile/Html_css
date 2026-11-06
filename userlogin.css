@@ -1,0 +1,480 @@
+
+/* =================================
+   1. GENERAL SETTINGS
+================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f5faff;
+    color: #123c52;
+}
+
+
+/* =================================
+   2. MAIN HEADER
+================================= */
+.header {
+    width: 100%;
+    min-height: 80px;
+    background: #123c52;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 4%;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo i {
+    color: #42d6e8;
+}
+
+/* NAVIGATION */
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #42d6e8;
+}
+
+.navbar .register {
+    background: #078bb5;
+    padding: 11px 14px;
+    border-radius: 5px;
+}
+
+.navbar .register:hover {
+    background: #42d6e8;
+    color: #123c52;
+}
+
+/* CHANGE COLOR BUTTON */
+.change-color {
+    background: #42d6e8;
+    color: #123c52;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.change-color:hover {
+    background: white;
+}
+
+/* LANGUAGE SELECTOR */
+.language-box {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: white;
+}
+
+.language-box select {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+/* =================================
+   3. USER LOGIN PAGE
+================================= */
+.user-login-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+        135deg,
+        #e8f8fc,
+        #f5faff,
+        #eaf1ff
+    );
+}
+
+
+/* =================================
+   4. LOGIN HEADER
+================================= */
+.user-login-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+}
+
+.user-login-logo {
+    color: #123c52;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.user-login-logo i {
+    color: #078bb5;
+}
+
+.user-login-logo span {
+    color: #123c52;
+}
+
+.user-back-home {
+    color: #087da5;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.user-back-home:hover {
+    color: #123c52;
+}
+
+
+/* =================================
+   5. MAIN SECTION
+================================= */
+.user-login-main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 15px;
+}
+
+/* LOGIN CARD */
+.user-login-card {
+    width: 100%;
+    max-width: 470px;
+    background: white;
+    padding: 38px 35px;
+    border-radius: 15px;
+    border-top: 5px solid #078bb5;
+    box-shadow: 0 8px 30px rgba(18, 60, 82, 0.12);
+    text-align: center;
+}
+
+
+/* =================================
+   6. USER ICON AND TITLE
+================================= */
+.user-login-icon {
+    width: 75px;
+    height: 75px;
+    background: #e2f8fc;
+    color: #078bb5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 18px;
+    font-size: 35px;
+}
+
+.user-login-card h1 {
+    color: #123c52;
+    font-size: 29px;
+    margin-bottom: 10px;
+}
+
+.user-login-subtitle {
+    color: #71818b;
+    font-size: 14px;
+    margin-bottom: 17px;
+    line-height: 1.6;
+}
+
+.system-title {
+    color: #078bb5;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 28px;
+}
+
+
+/* =================================
+   7. LOGIN FORM
+================================= */
+.user-login-form {
+    width: 100%;
+    text-align: left;
+}
+
+.user-input-group {
+    margin-bottom: 20px;
+}
+
+.user-input-group label {
+    display: block;
+    color: #123c52;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 9px;
+}
+
+/* INPUT BOX */
+.user-input-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 49px;
+    border: 1px solid #d5e2e9;
+    border-radius: 7px;
+    background: #fbfdff;
+    padding: 0 13px;
+    transition: 0.3s;
+}
+
+.user-input-box:focus-within {
+    border-color: #078bb5;
+    box-shadow: 0 0 0 3px rgba(7, 139, 181, 0.12);
+    background: white;
+}
+
+.user-input-box span {
+    margin-right: 11px;
+    color: #078bb5;
+    font-size: 17px;
+}
+
+.user-input-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #123c52;
+    font-size: 14px;
+}
+
+.user-input-box input::placeholder {
+    color: #a2afb7;
+}
+
+
+/* =================================
+   8. LOGIN OPTIONS
+================================= */
+.user-login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0 23px;
+    font-size: 12px;
+}
+
+.user-remember {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #71818b;
+    cursor: pointer;
+}
+
+.user-remember input {
+    accent-color: #087da5;
+}
+
+.user-forgot {
+    color: #087da5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.user-forgot:hover {
+    color: #123c52;
+    text-decoration: underline;
+}
+
+
+/* =================================
+   9. LOGIN BUTTON
+================================= */
+.user-login-button {
+    width: 100%;
+    height: 50px;
+    background: #087da5;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.user-login-button i {
+    margin-right: 8px;
+}
+
+.user-login-button:hover {
+    background: #123c52;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(18, 60, 82, 0.2);
+}
+
+
+/* =================================
+   10. CREATE ACCOUNT
+================================= */
+.create-account {
+    margin-top: 23px;
+    font-size: 13px;
+    color: #71818b;
+}
+
+.create-account a {
+    display: inline-block;
+    color: #087da5;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.create-account a:hover {
+    text-decoration: underline;
+    color: #123c52;
+}
+
+
+/* =================================
+   11. PATIENT SERVICES
+================================= */
+.user-login-info {
+    background: #effaff;
+    border-left: 4px solid #42d6e8;
+    border-radius: 6px;
+    padding: 17px;
+    margin-top: 25px;
+    text-align: left;
+}
+
+.user-login-info h3 {
+    color: #123c52;
+    font-size: 15px;
+    margin-bottom: 9px;
+}
+
+.user-login-info h3 i {
+    color: #078bb5;
+    margin-right: 5px;
+}
+
+.user-login-info p {
+    color: #71818b;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 13px;
+}
+
+.user-services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.user-services span {
+    color: #087da5;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.user-services i {
+    color: #16a085;
+    margin-right: 4px;
+}
+
+
+/* =================================
+   12. FOOTER
+================================= */
+.user-login-footer {
+    background: #123c52;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 13px;
+}
+
+
+/* =================================
+   13. RESPONSIVE DESIGN
+================================= */
+@media (max-width: 900px) {
+
+    .header {
+        justify-content: center;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .header {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .user-login-header {
+        padding: 20px;
+    }
+
+    .user-login-card {
+        padding: 30px 20px;
+    }
+
+    .user-login-card h1 {
+        font-size: 25px;
+    }
+
+    .user-services {
+        grid-template-columns: 1fr;
+    }
+
+    .user-login-options {
+        font-size: 11px;
+    }
+
+    .user-login-footer {
+        font-size: 11px;
+    }
+
+}

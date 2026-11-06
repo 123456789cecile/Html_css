@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration | HMS</title>
+    <link rel="stylesheet" href="UserRegistration.css">
+</head>
+<body>
+
+<header class="header" id="home">
+
+    <a href="#home" class="logo">
+        <i class="fa fa-hospital"></i> HBMS
+    </a>
+<button type="button" >change color</button>
+    <nav class="navbar">
+        <a href="#home"><i class="fa fa-home"></i> HOME</a>
+
+        <a href="about.html">
+            <i class="fa fa-info-circle"></i> ABOUT
+        </a>
+
+        <a href="AdminLogin.html">
+            <i class="fa fa-user-shield"></i> ADMIN LOGIN
+        </a>
+
+        <a href="doctorlogin.html">
+            <i class="fa fa-user-doctor"></i> DOCTOR LOGIN
+        </a>
+<a href="superadminlogin.html">SUPER ADMIN LOGIN</a>
+        <a href="UserRegistration.html" class="register">
+            <i class="fa fa-user-plus"></i> USER REGISTRATION
+        </a>
+    </nav>
+
+    <!-- LANGUAGE SELECTOR -->
+    <div class="language-box">
+        <i class="fa fa-globe"></i>
+
+        <select name="language" id="language">
+            <option value="en">English</option>
+            <option value="rw">Kinyarwanda</option>
+            <option value="fr">Français</option>
+        </select>
+    </div>
+
+</header>
+
+    <div class="registration-page">
+
+        <!-- HEADER -->
+        <header class="registration-header">
+            <a href="index.html" class="registration-logo">
+                🏥 <span>HMS</span>
+            </a>
+
+            <a href="index.html" class="back-home">
+                ← Back to Home
+            </a>
+        </header>
+
+        <!-- MAIN -->
+        <main class="registration-main">
+            <div class="registration-card">
+
+                <div class="registration-icon">👤</div>
+
+                <h1>Create Your Account</h1>
+
+                <p class="registration-subtitle">
+                    Register to access our Hospital Management System
+                </p>
+
+                <!-- REGISTRATION FORM -->
+                <form class="registration-form" action="userlogin.html" method="get">
+
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <div class="registration-input">
+                            <span>👤</span>
+                            <input type="text" id="fullName"
+                                name="fullName"
+                                placeholder="Enter your full name"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <div class="registration-input">
+                            <span>📧</span>
+                            <input type="email" id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <div class="registration-input">
+                            <span>📱</span>
+                            <input type="tel" id="phone"
+                                name="phone"
+                                placeholder="Enter your phone number"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="idNumber">ID Number</label>
+                        <div class="registration-input">
+                            <span>🪪</span>
+                            <input type="text" id="idNumber"
+                                name="idNumber"
+                                placeholder="Enter your ID number"
+                                required>
+                        </div>
+                    </div>
+
+                    <!-- DATE OF BIRTH AND GENDER -->
+                    <div class="two-columns">
+
+                        <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <div class="registration-input">
+                                <span>🎂</span>
+                                <input type="date" id="dob"
+                                    name="dob" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <div class="registration-input">
+                                <span>⚧️</span>
+                                <select id="gender" name="gender" required>
+                                    <option value="">Select</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- PASSWORD -->
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="registration-input">
+                            <span>🔒</span>
+                            <input type="password" id="password"
+                                name="password"
+                                placeholder="Create a password"
+                                minlength="8" required>
+                        </div>
+                    </div>
+
+                    <!-- CONFIRM PASSWORD -->
+                    <div class="form-group">
+                        <label for="confirmPassword">
+                            Confirm Password
+                        </label>
+                        <div class="registration-input">
+                            <span>🔐</span>
+                            <input type="password" id="confirmPassword"
+                                name="confirmPassword"
+                                placeholder="Confirm your password"
+                                minlength="8" required>
+                        </div>
+                    </div>
+
+                    <!-- TERMS -->
+                    <label class="terms">
+                        <input type="checkbox"
+                            name="termsAccepted" required>
+                        <span>
+                            I agree to the
+                            <a href="#terms">Terms and Conditions</a>
+                        </span>
+                    </label>
+
+                    <!-- REGISTER BUTTON -->
+                    <button type="submit" class="register-button">
+                        Create Account
+                    </button>
+
+                </form>
+
+                <!-- LOGIN LINK -->
+                <div class="already-account">
+                    <span>Already have an account?</span>
+                    <a href="UserLogin.html"
+                        class="registration-login-button">
+                        Login here
+                    </a>
+                </div>
+
+                <!-- INFORMATION -->
+                <div class="registration-info">
+                    <h3>🏥 Why Register?</h3>
+
+                    <p>
+                        After registration, patients can access
+                        healthcare services more easily.
+                    </p>
+
+                    <div class="registration-features">
+                        <span>✓ Book Appointments</span>
+                        <span>✓ Find Medical Services</span>
+                        <span>✓ View Hospital Locations</span>
+                        <span>✓ Manage Your Profile</span>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="registration-footer">
+            <p>
+                © 2026 Hospital Management System. All Rights Reserved.
+            </p>
+        </footer>
+ 
+    </div>
+
+</body>
+</html>

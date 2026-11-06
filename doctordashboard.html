@@ -1,0 +1,388 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Doctor Dashboard - HBMS</title>
+
+    <link rel="stylesheet" href="doctordashboard.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fas fa-hospital"></i>
+            <h2>HBMS</h2>
+        </div>
+
+        <div class="doctor-info">
+            <i class="fas fa-user-md"></i>
+            <h3>Welcome Doctor</h3>
+            <p>Doctor Dashboard</p>
+        </div>
+
+        <nav class="sidebar-menu">
+
+            <a href="#dashboard" class="active">
+                <i class="fas fa-home"></i>
+                Dashboard
+            </a>
+
+            <a href="#appointments">
+                <i class="fas fa-calendar-check"></i>
+                My Appointments
+            </a>
+
+            <a href="#schedule">
+                <i class="fas fa-calendar-alt"></i>
+                My Schedule
+            </a>
+
+            <a href="#patients">
+                <i class="fas fa-users"></i>
+                Patients
+            </a>
+
+            <a href="#department">
+                <i class="fas fa-stethoscope"></i>
+                My Department
+            </a>
+
+            <a href="#profile">
+                <i class="fas fa-user"></i>
+                My Profile
+            </a>
+
+            <a href="DoctorLogin.html" class="logout">
+                <i class="fas fa-sign-out-alt"></i>
+                Logout
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+
+            <div>
+                <h1>Doctor Dashboard</h1>
+                <p>Manage your appointments and patient activities</p>
+            </div>
+
+            <div class="topbar-user">
+                <i class="fas fa-user-circle"></i>
+                <span>Doctor</span>
+            </div>
+
+        </header>
+
+
+        <!-- WELCOME -->
+        <section id="dashboard" class="welcome-section">
+
+            <h2>Welcome to Your Doctor Dashboard</h2>
+
+            <p>
+                Manage your appointments, check patient information
+                and organize your daily medical schedule.
+            </p>
+
+        </section>
+
+
+        <!-- STATISTICS -->
+        <section class="stats-container">
+
+            <div class="stat-card">
+                <i class="fas fa-calendar-check"></i>
+
+                <div>
+                    <h3>12</h3>
+                    <p>Total Appointments</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <i class="fas fa-clock"></i>
+
+                <div>
+                    <h3>04</h3>
+                    <p>Pending Appointments</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <i class="fas fa-check-circle"></i>
+
+                <div>
+                    <h3>08</h3>
+                    <p>Approved Appointments</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- QUICK ACTIONS -->
+        <section class="content-section">
+
+            <h2>Quick Actions</h2>
+
+            <div class="quick-actions">
+
+                <a href="#appointments" class="action-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>View Appointments</h3>
+                    <p>Check appointment requests from patients.</p>
+                </a>
+
+                <a href="#schedule" class="action-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>My Schedule</h3>
+                    <p>View your daily working schedule.</p>
+                </a>
+
+                <a href="#patients" class="action-card">
+                    <i class="fas fa-users"></i>
+                    <h3>View Patients</h3>
+                    <p>Check patient information.</p>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- APPOINTMENTS -->
+        <section id="appointments" class="content-section">
+
+            <h2>My Appointments</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Patient Name</th>
+                            <th>Department</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Patient One</td>
+                            <td>General Medicine</td>
+                            <td>05/11/2026</td>
+                            <td>09:00 AM</td>
+                            <td>
+                                <span class="approved">Approved</span>
+                            </td>
+                            <td>
+                                <button class="view-button" type="button">
+                                    View
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Patient Two</td>
+                            <td>Cardiology</td>
+                            <td>06/11/2026</td>
+                            <td>10:00 AM</td>
+                            <td>
+                                <span class="pending">Pending</span>
+                            </td>
+                            <td>
+                                <button class="view-button" type="button">
+                                    View
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Patient Three</td>
+                            <td>Dental Care</td>
+                            <td>07/11/2026</td>
+                            <td>11:00 AM</td>
+                            <td>
+                                <span class="rejected">Rejected</span>
+                            </td>
+                            <td>
+                                <button class="view-button" type="button">
+                                    View
+                                </button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- SCHEDULE -->
+        <section id="schedule" class="content-section">
+
+            <h2>My Schedule</h2>
+
+            <div class="schedule-grid">
+
+                <div class="schedule-card">
+                    <i class="fas fa-calendar-day"></i>
+                    <h3>Monday</h3>
+                    <p>08:00 AM - 04:00 PM</p>
+                </div>
+
+                <div class="schedule-card">
+                    <i class="fas fa-calendar-day"></i>
+                    <h3>Tuesday</h3>
+                    <p>08:00 AM - 04:00 PM</p>
+                </div>
+
+                <div class="schedule-card">
+                    <i class="fas fa-calendar-day"></i>
+                    <h3>Wednesday</h3>
+                    <p>08:00 AM - 04:00 PM</p>
+                </div>
+
+                <div class="schedule-card">
+                    <i class="fas fa-calendar-day"></i>
+                    <h3>Thursday</h3>
+                    <p>08:00 AM - 04:00 PM</p>
+                </div>
+
+                <div class="schedule-card">
+                    <i class="fas fa-calendar-day"></i>
+                    <h3>Friday</h3>
+                    <p>08:00 AM - 01:00 PM</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PATIENTS -->
+        <section id="patients" class="content-section">
+
+            <h2>My Patients</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Patient Name</th>
+                            <th>Appointment Date</th>
+                            <th>Department</th>
+                            <th>Appointment Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Patient One</td>
+                            <td>05/11/2026</td>
+                            <td>General Medicine</td>
+                            <td><span class="approved">Approved</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Patient Two</td>
+                            <td>06/11/2026</td>
+                            <td>Cardiology</td>
+                            <td><span class="pending">Pending</span></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- DEPARTMENT -->
+        <section id="department" class="content-section">
+
+            <h2>My Department</h2>
+
+            <div class="department-card">
+
+                <i class="fas fa-stethoscope"></i>
+
+                <div>
+                    <h3>General Medicine</h3>
+                    <p>
+                        Responsible for providing general medical
+                        consultation and patient care.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROFILE -->
+        <section id="profile" class="content-section">
+
+            <h2>My Profile</h2>
+
+            <div class="profile-card">
+
+                <i class="fas fa-user-md"></i>
+
+                <div>
+                    <h3>Doctor Information</h3>
+                    <p>Name: Doctor Name</p>
+                    <p>Email: doctor@example.com</p>
+                    <p>Department: General Medicine</p>
+                    <p>Hospital: HBMS Hospital</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+            <p>
+                &copy; 2026 HBMS - Hospital Booking and Management System.
+            </p>
+        </footer>
+
+    </main>
+
+</div>
+
+</body>
+</html>

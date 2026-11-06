@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Admin Dashboard - HMS</title>
+    <link rel="stylesheet" href="AdminDashboard.css">
+</head>
+
+<body>
+
+<header class="header" id="home">
+
+    <a href="#home" class="logo">
+        <i class="fa fa-hospital"></i> HBMS
+    </a>
+<button type="button" >change color</button>
+    <nav class="navbar">
+        <a href="#home"><i class="fa fa-home"></i> HOME</a>
+
+        <a href="about.html">
+            <i class="fa fa-info-circle"></i> ABOUT
+        </a>
+
+        <a href="AdminLogin.html">
+            <i class="fa fa-user-shield"></i> ADMIN LOGIN
+        </a>
+
+        <a href="doctorlogin.html">
+            <i class="fa fa-user-doctor"></i> DOCTOR LOGIN
+        </a>
+<a href="superadminlogin.html">SUPER ADMIN LOGIN</a>
+        <a href="UserRegistration.html" class="register">
+            <i class="fa fa-user-plus"></i> USER REGISTRATION
+        </a>
+    </nav>
+
+    <!-- LANGUAGE SELECTOR -->
+    <div class="language-box">
+        <i class="fa fa-globe"></i>
+
+        <select name="language" id="language">
+            <option value="en">English</option>
+            <option value="rw">Kinyarwanda</option>
+            <option value="fr">Français</option>
+        </select>
+    </div>
+
+</header>
+
+<div class="admin-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar">
+
+        <div class="admin-logo">
+            <span class="logo-icon">🏥</span>
+            <h2>HMS <small>ADMIN</small></h2>
+        </div>
+
+        <div class="sidebar-profile">
+            <div class="profile-icon">👨‍💼</div>
+            <div>
+                <h3>Hospital Admin</h3>
+                <p>Administrator</p>
+            </div>
+        </div>
+
+        <nav class="admin-navigation">
+
+            <p class="nav-heading">MAIN MENU</p>
+
+            <a href="AdminDashboard.html" class="nav-link active">
+                <span>📊</span> Dashboard
+            </a>
+
+            <a href="ManagePatients.html" class="nav-link">
+                <span>👥</span> Manage Patients
+            </a>
+
+            <a href="ManageDoctors.html" class="nav-link">
+                <span>🩺</span> Manage Doctors
+            </a>
+
+            <a href="Appointments.html" class="nav-link">
+                <span>📅</span> Appointments
+            </a>
+
+            <a href="HospitalLocations.html" class="nav-link">
+                <span>📍</span> Hospital Locations
+            </a>
+
+            <a href="Reports.html" class="nav-link">
+                <span>📈</span> Reports
+            </a>
+
+            <p class="nav-heading">OTHER</p>
+
+            <a href="Settings.html" class="nav-link">
+                <span>⚙️</span> Settings
+            </a>
+
+            <a href="index.html" class="nav-link logout-link">
+                <span>🚪</span> Logout
+            </a>
+
+        </nav>
+
+        <div class="sidebar-footer">
+            <p>Hospital Management System</p>
+            <small>© 2026 HMS</small>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="admin-main">
+
+        <!-- TOPBAR -->
+        <header class="admin-topbar">
+
+            <div class="topbar-title">
+                <h1>Dashboard</h1>
+                <p>Manage your hospital activities and information.</p>
+            </div>
+
+            <div class="topbar-right">
+
+                <div class="notification">
+                    🔔
+                    <span class="notification-dot"></span>
+                </div>
+
+                <div class="admin-account">
+                    <div class="account-icon">👨‍💼</div>
+                    <div>
+                        <h4>Hospital Admin</h4>
+                        <p>Administrator</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- WELCOME SECTION -->
+        <section class="welcome-section">
+
+            <div class="welcome-text">
+                <p>HOSPITAL ADMINISTRATION</p>
+                <h2>Welcome Back, Admin!</h2>
+                <span>
+                    Here is an overview of your hospital management system.
+                </span>
+            </div>
+
+            <div class="welcome-icon">🏥</div>
+
+        </section>
+
+
+        <!-- STATISTICS -->
+        <section class="statistics-grid">
+
+            <div class="stat-card">
+                <div class="stat-icon patients-icon">👥</div>
+                <div>
+                    <p>Total Patients</p>
+                    <h2>1,250</h2>
+                    <small>Registered patients</small>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon doctors-icon">🩺</div>
+                <div>
+                    <p>Total Doctors</p>
+                    <h2>50</h2>
+                    <small>Active doctors</small>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon appointments-icon">📅</div>
+                <div>
+                    <p>Appointments</p>
+                    <h2>320</h2>
+                    <small>Total appointments</small>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon departments-icon">🏥</div>
+                <div>
+                    <p>Departments</p>
+                    <h2>12</h2>
+                    <small>Available departments</small>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- QUICK ACTIONS -->
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Quick Actions</h2>
+                    <p>Manage important hospital activities.</p>
+                </div>
+            </div>
+
+            <div class="quick-actions-grid">
+
+                <a href="ManageDoctors.html" class="action-card">
+                    <span class="action-icon">➕</span>
+                    <h3>Add New Doctor</h3>
+                    <p>Register a doctor into your hospital system.</p>
+                </a>
+
+                <a href="ManagePatients.html" class="action-card">
+                    <span class="action-icon">👥</span>
+                    <h3>View Patients</h3>
+                    <p>View and manage registered patients.</p>
+                </a>
+
+                <a href="Appointments.html" class="action-card">
+                    <span class="action-icon">📅</span>
+                    <h3>View Appointments</h3>
+                    <p>Manage patient appointment requests.</p>
+                </a>
+
+                <a href="Reports.html" class="action-card">
+                    <span class="action-icon">📊</span>
+                    <h3>View Reports</h3>
+                    <p>Check hospital activity and reports.</p>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- APPOINTMENTS TABLE -->
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Recent Appointments</h2>
+                    <p>Overview of recently booked appointments.</p>
+                </div>
+
+                <a href="Appointments.html" class="view-all">
+                    View All →
+                </a>
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Patient Name</th>
+                            <th>Department</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>John Smith</td>
+                            <td>Cardiology</td>
+                            <td>02 Nov 2026</td>
+                            <td>09:00 AM</td>
+                            <td><span class="status approved">Approved</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Mary Johnson</td>
+                            <td>Pediatrics</td>
+                            <td>02 Nov 2026</td>
+                            <td>10:30 AM</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>David Brown</td>
+                            <td>Neurology</td>
+                            <td>03 Nov 2026</td>
+                            <td>11:00 AM</td>
+                            <td><span class="status approved">Approved</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Sarah Wilson</td>
+                            <td>Dental Care</td>
+                            <td>03 Nov 2026</td>
+                            <td>02:00 PM</td>
+                            <td><span class="status cancelled">Cancelled</span></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- DEPARTMENTS -->
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Hospital Departments</h2>
+                    <p>Overview of available medical departments.</p>
+                </div>
+            </div>
+
+            <div class="departments-grid">
+
+                <div class="department-card">
+                    <span>❤️</span>
+                    <h3>Cardiology</h3>
+                    <p>Heart care services</p>
+                </div>
+
+                <div class="department-card">
+                    <span>👶</span>
+                    <h3>Pediatrics</h3>
+                    <p>Child healthcare services</p>
+                </div>
+
+                <div class="department-card">
+                    <span>🧠</span>
+                    <h3>Neurology</h3>
+                    <p>Nervous system care</p>
+                </div>
+
+                <div class="department-card">
+                    <span>🦷</span>
+                    <h3>Dental Care</h3>
+                    <p>Oral healthcare services</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="admin-footer">
+            <p>
+                © 2026 Hospital Management System.
+                All Rights Reserved.
+            </p>
+        </footer>
+
+    </main>
+
+</div>
+
+</body>
+</html>

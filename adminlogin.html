@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hospital Admin Login - HBMS</title>
+
+    <link rel="stylesheet" href="AdminLogin.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- MAIN NAVIGATION -->
+    <header class="header" id="home">
+
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-hospital"></i> HBMS
+        </a>
+
+        <button type="button" class="change-color">
+            Change Color
+        </button>
+
+        <nav class="navbar">
+
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i> HOME
+            </a>
+
+            <a href="about.html">
+                <i class="fa-solid fa-circle-info"></i> ABOUT
+            </a>
+
+            <a href="AdminLogin.html">
+                <i class="fa-solid fa-user-shield"></i> ADMIN LOGIN
+            </a>
+
+            <a href="doctorlogin.html">
+                <i class="fa-solid fa-user-doctor"></i> DOCTOR LOGIN
+            </a>
+
+            <a href="superadminlogin.html">
+                <i class="fa-solid fa-user-lock"></i> SUPER ADMIN LOGIN
+            </a>
+
+            <a href="UserRegistration.html" class="register">
+                <i class="fa-solid fa-user-plus"></i> USER REGISTRATION
+            </a>
+
+        </nav>
+
+        <!-- LANGUAGE SELECTOR -->
+        <div class="language-box">
+
+            <i class="fa-solid fa-globe"></i>
+
+            <select name="language" id="language">
+                <option value="en">English</option>
+                <option value="rw">Kinyarwanda</option>
+                <option value="fr">Français</option>
+            </select>
+
+        </div>
+
+    </header>
+
+
+    <!-- LOGIN PAGE -->
+    <div class="admin-login-page">
+
+        <main class="admin-login-main">
+
+            <section class="admin-login-card">
+
+                <div class="admin-login-icon">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+
+                <p class="admin-login-label">
+                    HOSPITAL ADMINISTRATION
+                </p>
+
+                <h1>Hospital Admin Login</h1>
+
+                <p class="admin-login-description">
+                    Sign in using the login credentials provided
+                    by your Super Administrator.
+                </p>
+
+
+                <!-- LOGIN FORM -->
+                <form action="AdminDashboard.html" method="get">
+
+                    <!-- EMAIL -->
+                    <div class="admin-login-field">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <div class="input-box">
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your assigned email"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <!-- PASSWORD -->
+                    <div class="admin-login-field">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <div class="input-box">
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Enter your assigned password"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <!-- LOGIN OPTIONS -->
+                    <div class="admin-login-options">
+
+                        <label>
+                            <input type="checkbox" name="remember">
+                            Remember me
+                        </label>
+
+                        <a href="#">
+                            Forgot Password?
+                        </a>
+
+                    </div>
+
+
+                    <!-- SIGN IN BUTTON -->
+                    <button type="submit" class="admin-login-button">
+
+                        <i class="fa-solid fa-right-to-bracket"></i>
+
+                        Sign In to Dashboard
+
+                    </button>
+
+                </form>
+
+
+                <!-- INFORMATION NOTE -->
+                <div class="admin-login-note">
+
+                    <strong>
+                        <i class="fa-solid fa-shield-halved"></i>
+                        Authorized Access Only
+                    </strong>
+
+                    <p>
+                        Hospital administrator accounts are created
+                        by the Super Administrator. Contact the
+                        Super Administrator if you have not received
+                        your login credentials.
+                    </p>
+
+                </div>
+
+
+                <p class="admin-login-security">
+                    <i class="fa-solid fa-lock"></i>
+                    Secure Hospital Management System
+                </p>
+
+            </section>
+
+        </main>
+
+
+        <!-- FOOTER -->
+        <footer class="admin-login-footer">
+
+            © 2026 Hospital Management and Booking System.
+            All Rights Reserved.
+
+        </footer>
+
+    </div>
+
+</body>
+</html>

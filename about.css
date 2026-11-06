@@ -1,0 +1,467 @@
+
+/* ==============================
+   GENERAL STYLING
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5faff;
+    color: #123c52;
+    line-height: 1.7;
+}
+
+.about-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* ==============================
+   1. HERO SECTION
+============================== */
+
+.about-hero {
+    text-align: center;
+    padding: 70px 8% 50px;
+    background: linear-gradient(135deg, #123c52, #078bb5);
+    color: white;
+}
+
+.about-hero h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.hero-subtitle {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    font-size: 17px;
+    color: #e8f7ff;
+}
+
+.about-image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+}
+
+.main-img {
+    max-width: 900px;
+    height: 400px;
+    border: 5px solid white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ==============================
+   2. STATISTICS SECTION
+============================== */
+
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 50px 8%;
+    background-color: white;
+}
+
+.stat-card {
+    background-color: #f0f9ff;
+    padding: 30px 15px;
+    text-align: center;
+    border-radius: 12px;
+    border-bottom: 4px solid #078bb5;
+    box-shadow: 0 4px 15px rgba(18, 60, 82, 0.08);
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(18, 60, 82, 0.15);
+}
+
+.stat-card h3 {
+    font-size: 30px;
+    color: #078bb5;
+    margin-bottom: 8px;
+}
+
+.stat-card p {
+    color: #456575;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* ==============================
+   3. MISSION & VISION
+============================== */
+
+.about-mission-vision {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 70px 8%;
+}
+
+.card {
+    background-color: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(18, 60, 82, 0.1);
+    border-left: 5px solid #078bb5;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    color: #078bb5;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #526b78;
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* ==============================
+   4. FEATURES SECTION
+============================== */
+
+.about-features {
+    padding: 70px 8%;
+    background-color: #eaf6fc;
+    text-align: center;
+}
+
+.about-features > h2 {
+    font-size: 32px;
+    color: #123c52;
+    margin-bottom: 40px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.feature-item {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(18, 60, 82, 0.08);
+    border-top: 4px solid #078bb5;
+    transition: 0.3s;
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    min-height: 85px;
+    padding: 15px 4%;
+    background: linear-gradient(135deg, #123c52, #087da5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* LOGO */
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.logo i {
+    color: #42d6e8;
+    margin-right: 8px;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 12px 10px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+    white-space: nowrap;
+}
+
+.navbar a i {
+    margin-right: 5px;
+}
+
+.navbar a:hover {
+    background: white;
+    color: #087da5;
+    transform: translateY(-2px);
+}
+
+/* REGISTER LINK */
+.navbar a.register {
+    background: #18b6c9;
+    color: white;
+    padding: 12px 15px;
+}
+
+.navbar a.register:hover {
+    background: white;
+    color: #087da5;
+}
+
+/* CHANGE COLOR BUTTON */
+.header button {
+    background: #ffffff;
+    color: #123c52;
+    border: 2px solid #42d6e8;
+    padding: 10px 15px;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.header button:hover {
+    background: #42d6e8;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* LANGUAGE SELECTOR */
+.language-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: white;
+    padding: 7px 10px;
+    border-radius: 7px;
+    color: #087da5;
+}
+
+.language-box i {
+    font-size: 18px;
+}
+
+.language-box select {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #123c52;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1100px) {
+    .header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar {
+        order: 3;
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    .header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header button {
+        width: 100%;
+    }
+}
+
+.feature-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(18, 60, 82, 0.15);
+}
+
+.feature-item h3 {
+    color: #078bb5;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.feature-item p {
+    color: #526b78;
+    font-size: 15px;
+}
+
+/* ==============================
+   5. SHOWCASE SECTION
+============================== */
+
+.about-showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+    padding: 70px 8%;
+    background-color: white;
+}
+
+.showcase-text h2 {
+    color: #123c52;
+    font-size: 30px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.showcase-text p {
+    color: #526b78;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.secondary-img {
+    max-width: 550px;
+    height: 350px;
+    box-shadow: 0 7px 20px rgba(18, 60, 82, 0.15);
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+============================== */
+
+/* Tablets */
+@media screen and (max-width: 900px) {
+
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-hero h1 {
+        font-size: 32px;
+    }
+
+    .about-showcase {
+        gap: 25px;
+    }
+}
+
+/* Mobile phones */
+@media screen and (max-width: 600px) {
+
+    .about-hero {
+        padding: 45px 5%;
+    }
+
+    .about-hero h1 {
+        font-size: 26px;
+    }
+
+    .hero-subtitle {
+        font-size: 15px;
+    }
+
+    .main-img {
+        height: 230px;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr 1fr;
+        padding: 35px 5%;
+        gap: 12px;
+    }
+
+    .stat-card {
+        padding: 20px 10px;
+    }
+
+    .stat-card h3 {
+        font-size: 24px;
+    }
+
+    .stat-card p {
+        font-size: 13px;
+    }
+
+    .about-mission-vision {
+        grid-template-columns: 1fr;
+        padding: 45px 5%;
+        gap: 20px;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+    .about-features {
+        padding: 45px 5%;
+    }
+
+    .about-features > h2 {
+        font-size: 25px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-showcase {
+        grid-template-columns: 1fr;
+        padding: 45px 5%;
+    }
+
+    .showcase-text h2 {
+        font-size: 25px;
+    }
+
+    .secondary-img {
+        height: 250px;
+    }
+}

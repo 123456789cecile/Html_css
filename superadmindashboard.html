@@ -1,0 +1,407 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBMS | Super Admin Dashboard</title>
+    <link rel="stylesheet" href="SuperAdminDashboard.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="dashboard-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            <i class="fa-solid fa-hospital"></i>
+            <span>HBMS</span>
+        </div>
+
+        <div class="admin-profile">
+            <div class="profile-icon">
+                <i class="fa-solid fa-user-shield"></i>
+            </div>
+            <div>
+                <h3>Super Admin</h3>
+                <p>System Administrator</p>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="#dashboard" class="nav-link active">
+                <i class="fa-solid fa-gauge-high"></i>
+                Dashboard
+            </a>
+
+            <a href="#hospitals" class="nav-link">
+                <i class="fa-solid fa-hospital"></i>
+                Manage Hospitals
+            </a>
+
+            <a href="#admins" class="nav-link">
+                <i class="fa-solid fa-user-tie"></i>
+                Hospital Admins
+            </a>
+
+            <a href="#reports" class="nav-link">
+                <i class="fa-solid fa-chart-pie"></i>
+                System Reports
+            </a>
+
+            <a href="#settings" class="nav-link">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </a>
+
+            <a href="index.html" class="nav-link logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <i class="fa-solid fa-shield-halved"></i>
+            <p>Secure System Administration</p>
+        </div>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content" id="dashboard">
+
+        <header class="topbar">
+            <div>
+                <h2>Super Admin Dashboard</h2>
+                <p>Welcome to the HBMS system management panel.</p>
+            </div>
+
+            <div class="topbar-user">
+                <i class="fa-solid fa-user-shield"></i>
+                <span>Super Admin</span>
+            </div>
+        </header>
+
+        <!-- WELCOME -->
+        <section class="welcome-section">
+            <div>
+                <h1>Welcome, Super Admin!</h1>
+                <p>
+                    Manage all registered hospitals and their administrators
+                    from one central system.
+                </p>
+            </div>
+
+            <i class="fa-solid fa-hospital-user welcome-icon"></i>
+        </section>
+
+        <!-- STATISTICS -->
+        <section class="statistics">
+
+            <div class="stat-card">
+                <div class="stat-icon blue">
+                    <i class="fa-solid fa-hospital"></i>
+                </div>
+                <div>
+                    <p>Total Hospitals</p>
+                    <h2>12</h2>
+                    <span>Registered hospitals</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon green">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <div>
+                    <p>Hospital Admins</p>
+                    <h2>12</h2>
+                    <span>Created accounts</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon orange">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+                <div>
+                    <p>Pending Approval</p>
+                    <h2>03</h2>
+                    <span>Awaiting review</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon purple">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <div>
+                    <p>Total Patients</p>
+                    <h2>850</h2>
+                    <span>Across all hospitals</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- QUICK ACTIONS -->
+        <section class="section-card">
+            <div class="section-heading">
+                <div>
+                    <h2>Quick Actions</h2>
+                    <p>Manage the main system activities.</p>
+                </div>
+            </div>
+
+            <div class="quick-actions">
+                <a href="#create-admin" class="action-card">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <h3>Create Hospital Admin</h3>
+                    <p>Create login credentials for a hospital administrator.</p>
+                </a>
+
+                <a href="#hospitals" class="action-card">
+                    <i class="fa-solid fa-hospital"></i>
+                    <h3>Manage Hospitals</h3>
+                    <p>View and manage registered hospitals.</p>
+                </a>
+
+                <a href="#reports" class="action-card">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <h3>View Reports</h3>
+                    <p>Review system-wide statistics and reports.</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- HOSPITALS -->
+        <section class="section-card" id="hospitals">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Registered Hospitals</h2>
+                    <p>Overview of hospitals in the HBMS system.</p>
+                </div>
+
+                <a href="#create-admin" class="primary-button">
+                    <i class="fa-solid fa-plus"></i> Add Hospital Admin
+                </a>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Hospital ID</th>
+                            <th>Hospital Name</th>
+                            <th>Location</th>
+                            <th>Admin Email</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>HMS001</td>
+                            <td>Kira Hospital</td>
+                            <td>Nyagatare</td>
+                            <td>admin@kirahospital.com</td>
+                            <td><span class="status active-status">Active</span></td>
+                            <td><a href="#admins" class="view-link">View</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>HMS002</td>
+                            <td>Hope Medical Center</td>
+                            <td>Huye</td>
+                            <td>admin@hopemedical.com</td>
+                            <td><span class="status active-status">Active</span></td>
+                            <td><a href="#admins" class="view-link">View</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>HMS003</td>
+                            <td>Unity Hospital</td>
+                            <td>Kigali</td>
+                            <td>admin@unityhospital.com</td>
+                            <td><span class="status pending-status">Pending</span></td>
+                            <td><a href="#admins" class="view-link">View</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+        <!-- CREATE HOSPITAL ADMIN -->
+        <section class="section-card" id="create-admin">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Create Hospital Admin Account</h2>
+                    <p>Only the Super Admin can create these accounts.</p>
+                </div>
+            </div>
+
+            <form class="admin-form" action="#" method="post">
+
+                <div class="form-group">
+                    <label for="hospital">Select Hospital</label>
+                    <input type="text" placeholder="enter hospital name" id="hospital" name="hospital" required/>
+                        
+
+                </div>
+
+                <div class="form-group">
+                    <label for="adminname">Admin Full Name</label>
+                    <input type="text" id="adminname"
+                           name="adminname"
+                           placeholder="Enter admin full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="adminemail">Admin Email</label>
+                    <input type="email" id="adminemail"
+                           name="adminemail"
+                           placeholder="Enter admin email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="temporarypassword">Temporary Password</label>
+                    <input type="password" id="temporarypassword"
+                           name="temporarypassword"
+                           placeholder="Enter temporary password" required>
+                </div>
+
+                <button type="submit" class="primary-button">
+                    <i class="fa-solid fa-user-plus"></i>
+                    Create Admin Account
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- HOSPITAL ADMIN ACCOUNTS -->
+        <section class="section-card" id="admins">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Hospital Admin Accounts</h2>
+                    <p>Administrators responsible for individual hospitals.</p>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Admin Name</th>
+                            <th>Hospital</th>
+                            <th>Email</th>
+                            <th>Account Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>John Smith</td>
+                            <td>Kira Hospital</td>
+                            <td>admin@kirahospital.com</td>
+                            <td><span class="status active-status">Active</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Mary Jane</td>
+                            <td>Hope Medical Center</td>
+                            <td>admin@hopemedical.com</td>
+                            <td><span class="status active-status">Active</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>David Peter</td>
+                            <td>Unity Hospital</td>
+                            <td>admin@unityhospital.com</td>
+                            <td><span class="status pending-status">Pending</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+        <!-- REPORTS -->
+        <section class="section-card" id="reports">
+            <div class="section-heading">
+                <div>
+                    <h2>System Reports</h2>
+                    <p>General overview of the entire HBMS platform.</p>
+                </div>
+            </div>
+
+            <div class="report-grid">
+                <div class="report-item">
+                    <i class="fa-solid fa-hospital"></i>
+                    <div>
+                        <h3>Hospital Report</h3>
+                        <p>Registered hospitals and their status.</p>
+                    </div>
+                </div>
+
+                <div class="report-item">
+                    <i class="fa-solid fa-user-tie"></i>
+                    <div>
+                        <h3>Admin Report</h3>
+                        <p>Hospital administrator accounts.</p>
+                    </div>
+                </div>
+
+                <div class="report-item">
+                    <i class="fa-solid fa-users"></i>
+                    <div>
+                        <h3>Patient Report</h3>
+                        <p>Patient registration across hospitals.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SETTINGS -->
+        <section class="section-card" id="settings">
+            <div class="section-heading">
+                <div>
+                    <h2>System Settings</h2>
+                    <p>General system administration settings.</p>
+                </div>
+            </div>
+
+            <div class="settings-row">
+                <div>
+                    <h3>System Information</h3>
+                    <p>Hospital Management and Booking System</p>
+                </div>
+                <span class="status active-status">Running</span>
+            </div>
+
+            <div class="settings-row">
+                <div>
+                    <h3>Account Security</h3>
+                    <p>Super Admin account access and security.</p>
+                </div>
+                <i class="fa-solid fa-shield-halved settings-icon"></i>
+            </div>
+        </section>
+
+        <footer class="dashboard-footer">
+            &copy; 2026 HBMS. Super Admin Control Panel.
+        </footer>
+
+    </main>
+</div>
+
+</body>
+</html>

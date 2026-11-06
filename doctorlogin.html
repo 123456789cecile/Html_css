@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Doctor Login - HBMS</title>
+
+    <link rel="stylesheet" href="doctorlogin.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- MAIN HEADER -->
+    <header class="header" id="home">
+
+        <a href="index.html" class="logo">
+            <i class="fa fa-hospital"></i> HBMS
+        </a>
+
+        <button type="button" class="change-color">
+            Change Color
+        </button>
+
+        <nav class="navbar">
+
+            <a href="index.html">
+                <i class="fa fa-home"></i> HOME
+            </a>
+
+            <a href="about.html">
+                <i class="fa fa-info-circle"></i> ABOUT
+            </a>
+
+            <a href="AdminLogin.html">
+                <i class="fa fa-user-shield"></i> ADMIN LOGIN
+            </a>
+
+            <a href="DoctorLogin.html">
+                <i class="fa fa-user-doctor"></i> DOCTOR LOGIN
+            </a>
+
+            <a href="SuperAdminLogin.html">
+                SUPER ADMIN LOGIN
+            </a>
+
+            <a href="UserRegistration.html" class="register">
+                <i class="fa fa-user-plus"></i> USER REGISTRATION
+            </a>
+
+        </nav>
+
+        <!-- LANGUAGE SELECTOR -->
+        <div class="language-box">
+
+            <i class="fa fa-globe"></i>
+
+            <select name="language" id="language">
+                <option value="en">English</option>
+                <option value="rw">Kinyarwanda</option>
+                <option value="fr">Français</option>
+            </select>
+
+        </div>
+
+    </header>
+
+
+    <!-- DOCTOR LOGIN PAGE -->
+    <div class="doctor-login-page">
+
+        <!-- LOGIN HEADER -->
+        <header class="doctor-login-header">
+
+            <a href="index.html" class="doctor-login-logo">
+                <i class="fas fa-hospital"></i>
+                <span>HBMS</span>
+            </a>
+
+            <a href="index.html" class="doctor-login-home">
+                <i class="fas fa-arrow-left"></i>
+                Back to Home
+            </a>
+
+        </header>
+
+
+        <!-- LOGIN SECTION -->
+        <main class="doctor-login-main">
+
+            <section class="doctor-login-card">
+
+                <div class="doctor-login-icon">
+                    <i class="fas fa-user-doctor"></i>
+                </div>
+
+                <p class="doctor-login-eyebrow">
+                    MEDICAL PROFESSIONALS
+                </p>
+
+                <h1>Doctor Login</h1>
+
+                <p class="doctor-login-subtitle">
+                    Sign in to manage your appointments and patient care.
+                </p>
+
+
+                <!-- LOGIN FORM -->
+                <form action="DoctorDashboard.html" method="get">
+
+                    <div class="doctor-login-field">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your registered email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="doctor-login-field">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Enter your password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <button type="submit" class="doctor-login-submit">
+                        <i class="fas fa-sign-in-alt"></i>
+                        Sign In to Dashboard
+                    </button>
+
+                </form>
+
+
+                <!-- REGISTER INFORMATION -->
+                <p class="doctor-login-register">
+                    Don't have an account?
+                    <span>
+                        Contact your Hospital Administrator.
+                    </span>
+                </p>
+
+
+                <!-- SECURITY INFORMATION -->
+                <div class="doctor-login-note">
+
+                    <strong>
+                        <i class="fas fa-lock"></i>
+                        Secure Access
+                    </strong>
+
+                    <p>
+                        Only approved doctor accounts should access
+                        doctor services. Contact the hospital
+                        administrator if your account is pending.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- FOOTER -->
+        <footer class="doctor-login-footer">
+
+            <p>
+                &copy; 2026 Hospital Booking and Management System.
+                All Rights Reserved.
+            </p>
+
+        </footer>
+
+    </div>
+
+</body>
+</html>
